@@ -1,0 +1,116 @@
+.workout-timer-modal {
+  max-width: 900px;
+  width: 95%;
+}
+
+.workout-timer-content {
+  padding: 1rem;
+}
+
+.timer-display {
+  background: #f8f9fa;
+  padding: 2rem;
+  border-radius: 8px;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.timer-main .time {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #2c3e50;
+  margin: 1rem 0;
+}
+
+.timer-controls {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.rest-timer .time {
+  font-size: 2rem;
+  color: #e74c3c;
+  margin: 1rem 0;
+}
+
+.workout-builder {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  border: 1px solid #e9ecef;
+  margin-bottom: 2rem;
+}
+
+.set-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.set-row input {
+  flex: 1;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.set-row .btn {
+  flex: 0 0 auto;
+}
+
+.current-workout {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  border: 1px solid #e9ecef;
+}
+
+.current-workout .exercises-list {
+  margin-top: 1rem;
+}
+
+.exercise-item {
+  padding: 1rem;
+  border-radius: 6px;
+  background: #f8f9fa;
+  margin-bottom: 1rem;
+  border: 1px solid #e9ecef;
+}
+
+.exercise-item h4 {
+  margin: 0 0 0.5rem 0;
+  color: #2c3e50;
+}
+
+.exercise-item ul {
+  margin: 0;
+  padding-left: 1.5rem;
+}
+
+.exercise-item li {
+  margin-bottom: 0.25rem;
+}
+
+@media (max-width: 768px) {
+  .timer-main .time {
+    font-size: 2rem;
+  }
+  
+  .timer-controls {
+    flex-direction: column;
+  }
+  
+  .set-row {
+    flex-wrap: wrap;
+  }
+  
+  .workout-timer-modal {
+    height: 90vh;
+    overflow-y: auto;
+  }
+}

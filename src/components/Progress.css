@@ -1,0 +1,138 @@
+.progress {
+  padding: 1rem;
+}
+
+.progress-filters {
+  margin-bottom: 2rem;
+  padding: 1rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+  display: inline-block;
+}
+
+.progress-filters .filter-group {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.progress-filters select {
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.chart-section {
+  background: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  border: 1px solid #e9ecef;
+  margin: 2rem 0;
+}
+
+.chart-section h3 {
+  margin: 0 0 1.5rem 0;
+  color: #2c3e50;
+}
+
+.chart-container {
+  height: 300px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.bar-chart {
+  display: flex;
+  align-items: flex-end;
+  height: 80%;
+  gap: 2rem;
+  width: 100%;
+  justify-content: center;
+}
+
+.bar-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  max-width: 80px;
+}
+
+.bar {
+  width: 100%;
+  background: linear-gradient(to top, #3498db, #2c3e50);
+  border-radius: 4px 4px 0 0;
+  min-height: 5px;
+  transition: height 0.5s ease;
+}
+
+.bar-label {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.bar-value {
+  margin-top: 0.5rem;
+  font-weight: 500;
+}
+
+.achievements {
+  margin-top: 2rem;
+}
+
+.achievements h3 {
+  margin: 0 0 1.5rem 0;
+  color: #2c3e50;
+}
+
+.achievements-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.achievement-card {
+  background: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  border: 1px solid #e9ecef;
+  transition: transform 0.2s;
+}
+
+.achievement-card:hover {
+  transform: translateY(-5px);
+}
+
+.achievement-icon {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.achievement-card h4 {
+  margin: 0 0 0.5rem 0;
+  color: #2c3e50;
+}
+
+.achievement-card p {
+  margin: 0;
+  color: #6c757d;
+}
+
+@media (max-width: 768px) {
+  .bar-chart {
+    gap: 1rem;
+  }
+  
+  .bar-container {
+    max-width: 60px;
+  }
+  
+  .achievements-grid {
+    grid-template-columns: 1fr;
+  }
+}
